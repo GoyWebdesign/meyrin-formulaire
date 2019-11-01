@@ -1,3 +1,5 @@
+// remboursement ()
+// radiobuttons type_demandeur gère la visibilité d'un bouton/texte (si privé est choisi)
 // Déclenchement sur "souris relachée"
 function remboursement () {
     var type = this.getField("type demandeur").value;
@@ -8,6 +10,8 @@ function remboursement () {
     }
 }
 
+// lien ()
+// commande_matériel gère la visibilité d'un bouton/texte lien (si cochée)
 // Déclenchement sur "souris relachée"
 function lien () {
     var comm = this.getField("Matériel à commander à la voirie").value;
@@ -18,6 +22,8 @@ function lien () {
     }
 }
 
+// materiel ()
+// prêt_matériel rend le champs de texte précisions_matériel obligatoire (si cochée)
 // Déclenchement sur "souris relachée"
 function materiel () {
     var pret = this.getField("Prêt de matériel lié à la salle").value;
@@ -30,6 +36,8 @@ function materiel () {
     }
 }
 
+// lu ()
+// La case Lu fait apparitre le boton d'envoi du formulaire, si cochée
 // Déclenchement sur "souris relachée"
 function lu () {
     var case_lu = this.getField("Lu").value;
@@ -40,6 +48,8 @@ function lu () {
     }
 }
 
+// proof ()
+// Le choix de type_demandeur et de periode gère l'utilisation d'une des 9 listes déroulantes
 // Déclenchement sur "souris relachée"
 function proof () {
     // vrai type
@@ -122,6 +132,8 @@ function proof () {
     }  
 };
 
+// vider ()
+// le focus sur les 6 champs de dates fait disparaître les textes "placeholders"
 // Déclenchement sur "champ activé"
 function vider () {
     if (event.target.value=="JJ") {
